@@ -158,3 +158,29 @@
 
 </body>
 </html>
+<section class="item">
+  <h2>📱 iPhone 11 — Сиреневый</h2>
+  <div class="gallery">
+    <img src="iphone1.jpg" alt="iPhone 11 purple">
+    <img src="iphone2.jpg" alt="iPhone 11 purple">
+  </div>
+  <p>128 ГБ, аккумулятор 72%. Всегда со мной, как правая рука.</p>
+</section>
+.gallery {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+.gallery img {
+  width: 48%;
+  border-radius: 8px;
+  animation: fadeIn 1s ease;
+}
+
+@media screen and (max-width: 600px) {
+  .gallery img { width: 100%; }
+  header, .item { padding: 20px; }
+  h1 { font-size: 28px; }
+}
